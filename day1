@@ -1,0 +1,35 @@
+#Program to check there are how many elements with stricter greater than and stricter lesser than values in a given list
+
+from collections import defaultdict
+    
+mylist = [1,2,3,4]
+mydict = defaultdict(list)
+
+#Check for each element if there is a greater than and lesser than element exists in the list and add it to the defaultdict
+for i in mylist:
+  for j in mylist:
+    if i<j:
+      mydict[i].append("greaterthanexists")
+    if i>j:
+      mydict[i].append("lesserthanexists")
+
+#create an empty list and append the enteries which as  "greaterthanexists" and "lesserthanexists" as the Value in defaultdict
+final_output = []
+count = 0
+for i in dict.keys(mydict):
+  if "lesserthanexists" in mydict[i] and "greaterthanexists" in mydict[i]:
+    final_output.append(i)
+    count += 1
+
+#check if there are any duplicates in the original list and if it has any stricter greater than and stricter lesser than Value
+list = {}
+for x in mylist:
+  if mylist.count(x) > 1 and x in final_output:
+    list[x]= mylist.count(x)
+
+#If there are any duplicates in the original list, remove the element count and add the total number of duplicates
+for element in list:
+  count -= 1
+  count += list[element]
+print (count)
+      
