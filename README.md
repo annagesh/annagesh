@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Anusha Nagesh 
 - 👀 I’m interested in Automation Development, Devops and Cloud Practices
 - 🌱 I’m currently learning Kubernetes, Ansible
-- 💞️ I’m currently working on completing #100daysofCodingChallenge
+- 💞️ I’m currently working on completing LeetCode Challenges
 - 📫 You can reach me on my LinkedIn Profile - https://www.linkedin.com/in/anusha-%E3%82%A2%E3%83%8C%E3%81%A7%E3%82%83-nagesh-%E3%83%8A%E3%82%B2%E3%82%B7%E3%83%A5-9076742b/
 
 <!---
